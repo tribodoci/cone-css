@@ -1,0 +1,50 @@
+
+<html>
+    <head>
+        <title>Sheldon Led Cone CSS</title>
+        <style>
+            /*Base do cone (losango)*/
+            .cone {
+              top:50%;
+              left:50%;
+              position:absolute;
+              width: 0;
+              height: 0;
+              border-left: 50px solid #e7a535;
+              border-right: 50px solid #e7a535;
+              border-bottom: 50px solid #e7a535;
+              border-top: 50px solid #e7a535;
+              -webkit-transform: rotate(45deg);
+              -moz-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+              -o-transform: rotate(45deg);
+              -webkit-border-radius: 10%;
+              -moz-border-radius: 10%;
+              border-radius: 10%;
+              box-shadow: 2px 2px 0 2px rgba(179,122,39,1);
+            }
+            /*Corpo do Cone (triangulo)*/
+            .cone:after {
+              width: 0;
+              height: 0;
+              position: absolute;
+              content: "";
+              border-left: 70px solid transparent;
+              border-right: 70px solid transparent;
+              border-top: 140px solid #f7b137;
+              top: -100px;
+              left: -100px;
+              -webkit-transform: rotate(135deg);
+              -moz-transform: rotate(135deg);
+              -ms-transform: rotate(135deg);
+              -o-transform: rotate(135deg);;
+              -webkit-border-radius: 50%;
+              -moz-border-radius: 50%;
+              border-radius: 50%;
+            }  	
+        </style>
+    </head>
+    <body>
+        <div class="cone"></div>
+    </body>
+<html>
